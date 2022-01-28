@@ -10,7 +10,7 @@ const port = process.env.PORT || 4500;
 //Travel Trust
 //5t4X5c2rdnkVVpk1
 
-//middleware
+//middlewar
 app.use(cors());
 app.use(express.json());
 
@@ -31,7 +31,7 @@ async function run() {
     const usersCollection = database.collection("user");
     const reviewCollection = database.collection("review");
 
-    //CREATE A ORDER APLI
+    //CREATE A ORDER APL
     app.post("/package", async (req, res) => {
       const data = req.body;
       const result = await packageCollection.insertOne(data);
